@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WedStudio-Портфоліо</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    
+    
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="header-nav">
+          <a href="index.html" lang="en" class="header__logo link"><span>Web</span>Studio</a>
+
+          <ul class="main-nav list">
+            <li class="main-nav__item">
+              <a href="index.html" class="main-nav__link link">Студія</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="portfolio.html" class="main-nav__link link current">Портфоліо</a>
+            </li>
+            <li class="main-nav__item"><a href="#" class="main-nav__link link">Контакти</a></li>
+          </ul>
+        </nav>
+    
+
+      
+        <ul class="conneсtion-nav list">
+        <li class="conneсtion-nav__item">
+          <a href="mailto:info@webstudio.com" class="conneсtion-nav__link link"
+            >
+            <svg class="connection-nav__icon"  width="16" height="12">
+              <use href="./images/icons.svg#icon-mail"></use>
+            </svg>
+            info@webstudio.com</a
+          >
+        </li>
+        <li class="conneсtion-nav__item">
+          <a href="tel:+380961111111" class="conneсtion-nav__link link"
+            >
+            <svg class="connection-nav__icon"  width="10" height="16">
+              <use href="./images/icons.svg#icon-tel"></use>
+            </svg>
+            +38 096 111 11 11</a
+          >
+        </li>
+      </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="section example">
+        <div class="container">
+          <h2 class="visually-hidden">Приклади наших робіт</h2>
+        <!--Кнопки фільтрації прикладів робіт-->
+        <ul class="buttons list">
+          <li>
+            <button type="button" class="example-btn btn">Всі</button>
+          </li>
+          <li><button type="button" class="example-btn btn">Веб-сайти</button></li>
+          <li>
+            <button type="button" class="example-btn btn">Додатки</button>
+          </li>
+          <li><button type="button" class="example-btn btn">Дизайн</button></li>
+          <li>
+            <button type="button" class="example-btn btn">Маркетинг</button>
+          </li>
+        </ul>
+
+        <!--Саме приклади-->
+
+        <ul class="example-list list">
+          <li class="example-item">
+            <a href="#" class="example-link link">
+              <div class="example-activ">
+                <img
+                src="./images/portfolio/img1.jpg"
+                alt="Лед-топ з відкритим веб-сайтом"
+                width="370"
+                height="294"
+              />
+              <p class="activ-text text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+            </div>
+              
+              
+              <div class="example-div">
+                <h3 class="example-titel titel">Техокряк</h3>
+                <p class="example-text text">Веб-сайт</p>
+              </div> 
+            </a>
+          </li>
+          <li class="example-item">
+            <a href="#" class="example-link link">
+              <div class="example-activ">
+                <img
+                src="./images/portfolio/img2.jpg"
+                alt="Блок-шот при спробі слем-данку"
+                width="370"
+                height="294"
+              />
+              <p class="activ-text text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+              </div>
+              
+              <div class="example-div">
+                <h3 class="example-titel titel">
+                Постер <span lang="en">Orlean vs Golden Star</span>
+              </h3>
+              <p class="example-text text">Дизайн</p>
+              </div> 
+            </a>
+          </li>
+          <li class="example-item">
+            <a href="#" class="example-link link">
+              <div class="example-activ">
+                <img
+                src="./images/portfolio/img3.jpg"
+                alt="Логотип ресторану Seafood"
+                width="370"
+                height="294"
+              />
+              <p class="activ-text text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+              </div>
+              
+              <div class="example-div">
+                <h3 class="example-titel titel">Ресторан <span lang="en">Seafood</span></h3>
+              <p class="example-text text">Додаток</p>
+              </div> 
+            </a>
+          </li>
+          <li class="example-item">
+            <a href="#" class="example-link link">
+              <div class="example-activ">
+                <img
+                src="./images/portfolio/img4.jpg"
+                alt="Навушники"
+                width="370"
+                height="294"
+              />
+              <p class="activ-text text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+              </div>
+              
+              <div class="example-div">
+                <h3 class="example-titel titel">Проект <span lang="en">Prime</span></h3>
+              <p class="example-text text">Маркетинг</p>
+              </div>
+            </a>
+          </li>
+          <li class="example-item">
+            <a href="#" class="example-link link">
+              <div class="example-activ">
+                <img
+                src="./images/portfolio/img5.jpg"
+                alt="Дві коробки різних розмірів"
+                width="370"
+                height="294"
+              />
+              <p class="activ-text text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+              </div>
+              
+              <div class="example-div">
+                <h3 class="example-titel titel">Проект <span lang="en">Boxes</span></h3>
+              <p class="example-text text">Додаток</p>
+              </div> 
+            </a>
+          </li>
+          <li class="example-item">
+            <a href="#" class="example-link link">
+              <div class="example-activ">
+                <img
+                src="./images/portfolio/img6.jpg"
+                alt="Монітор з відкритим веб-сайтом"
+                width="370"
+                height="294"
+              />
+              <p class="activ-text text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+              </div>
+              
+              <div class="example-div">
+                <h3 class="example-titel titel" lang="en">Inspiration has no Borders</h3>
+              <p class="example-text text">Веб-сайт</p>
+              </div> 
+            </a>
+          </li>
+          <li class="example-item">
+            <a href="#" class="example-link link">
+              <div class="example-activ">
+                <img
+                src="./images/portfolio/img7.jpg"
+                alt="Розгорнута книга з картинками"
+                width="370"
+                height="294"
+              />
+              <p class="activ-text text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+              </div>
+              
+              <div class="example-div">
+                <h3 class="example-titel titel">Издание <span lang="en">Limited Edition</span></h3>
+              <p class="example-text text">Дизайн</p>
+              </div> 
+            </a>
+          </li>
+          <li class="example-item">
+            <a href="#" class="example-link link">
+              <div class="example-activ">
+                <img
+                src="./images/portfolio/img8.jpg"
+                alt="Бірка з маркуванням виробу"
+                width="370"
+                height="294"
+              />
+              <p class="activ-text text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+              </div>
+              
+              <div class="example-div">
+                <h3 class="example-titel titel">Проект <span lang="en">LAB</span></h3>
+              <p class="example-text text">Маркетинг</p>
+              </div> 
+            </a>
+          </li>
+          <li class="example-item">
+            <a href="#" class="example-link link">
+              <div class="example-activ">
+                <img
+                src="./images/portfolio/img9.jpg"
+                alt="Лед-топ на екрані якого відбувається процес встановлення десктопного додатку"
+                width="370"
+                height="294"
+              />
+              <p class="activ-text text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+              </div>
+              
+              <div class="example-div">
+                <h3 class="example-titel titel" lang="en">Growing Business</h3>
+              <p class="example-text text">Додаток</p>
+              </div> 
+            </a>
+          </li>
+        </ul>
+        </div>
+        
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-add">
+          <a href="index.html" lang="en" class="footer-logo link"
+          ><span>Web</span>Studio</a>        
+          <address class="footer-address">
+            <ul class="address-list list">
+              <li class="addres-item">
+                <a
+                  href="https://goo.gl/maps/VcLh4SeBCDLP2WR46"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="address link"
+                  >м. Київ, проспект Лесі Українки,26</a
+                >
+              </li>
+              <li class="addres-item">
+                <a href="mailto:info@webstudio.com" class="footer-cont link"
+                  >info@webstudio.com</a
+                >
+              </li>
+              <li class="addres-item">
+                <a href="tel:+380961111111" class="footer-cont link"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-soc">
+          <h3 class="footer-titel titel">
+            Приєднуйтесь
+          </h3>
+            <ul class="footer-soc-list list">
+                <li class="foooter-soc-item"><a href="" class="foooter-soc-link link">
+                  <svg class="footer-soc-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a></li>
+                <li class="foooter-soc-item"><a href="" class="foooter-soc-link link">
+                  <svg class="footer-soc-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a></li>
+                <li class="foooter-soc-item"><a href="" class="foooter-soc-link link">
+                  <svg class="footer-soc-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-fecabook"></use>
+                  </svg>
+                </a></li>
+                <li class="foooter-soc-item"><a href="" class="foooter-soc-link link">
+                  <svg class="footer-soc-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a></li>
+            </ul>
+        </div>
+        <div class="footer-mailing">
+          <h3 class="footer-titel titel">Підпишіться на розсилку</h3>
+          <form class="footer-form">
+            <input class="footer-input" type="email" name="email"  placeholder="E-mail" />
+            <button type="submit" class="mailing-btn btn">
+              <span class="btn-text">Підписатися</span>
+              <span class="send-icon"><svg class="send" width="24" height="24">
+            <use href="./images/icons.svg#icon-send"></use>
+          </svg></span>
+            </button>
+          </form>
+        </div>
+      </div>      
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+@import './utils/variables';
+@import './base/reset';
+@import './base/common';
+@import './utils/visually';
+
+@import './components/container';
+@import './components/main-titel';
+@import './components/titel';
+@import './components/text';
+@import './components/modal';
+
+
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/specialty';
+@import './layouts/what-do';
+@import './layouts/team';
+@import './layouts/client';
+@import './layouts/footer';
+@import './layouts/portfolio-btn';
+@import './layouts/example';
