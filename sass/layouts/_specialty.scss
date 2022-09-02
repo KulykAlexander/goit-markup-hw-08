@@ -1,9 +1,21 @@
 .specialty__list {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    @include desktop {
+        
+        
+    }
 .specialty__item {
-    width: 270px;
+    width: 100%;
+    @include tablet {
+        width: calc((100% - 30px) / 2);
+    }
+
+    @include desktop {
+        width: calc((100% - 90px) / 4);
+        
+    }
 }
 .specialty__icon {
     display: flex;
@@ -16,11 +28,13 @@
     
 }
 .specialty__titel {
-    width: 270px;
     text-transform: uppercase;
     margin-bottom: 10px;
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
 }
 .specialty__text {
-    width: 270px;
+    
 }
 }

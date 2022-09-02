@@ -46,8 +46,15 @@ body {
 
 .section {
   margin: 0 auto;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .link {
@@ -97,11 +104,18 @@ body {
 
 .main-titel {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .main-titel {
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 
 .titel {
@@ -436,7 +450,7 @@ textarea::placeholder {
   margin-right: 50px;
 }
 
-.hero .container {
+.hero {
   text-align: center;
   width: 100%;
   height: auto;
@@ -451,13 +465,13 @@ textarea::placeholder {
 }
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero .container {
+  .hero {
     background-image: var(--bg-gradient), url(../images/back-mob-2x.jpg);
   }
 }
 
 @media screen and (min-width: 480px) {
-  .hero .container {
+  .hero {
     width: 480px;
     height: 400px;
     padding: 118px 0px;
@@ -465,7 +479,7 @@ textarea::placeholder {
 }
 
 @media screen and (min-width: 768px) {
-  .hero .container {
+  .hero {
     width: 768px;
     height: 400px;
     padding: 118px 0;
@@ -474,13 +488,13 @@ textarea::placeholder {
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .hero .container {
+  .hero {
     background-image: var(--bg-gradient), url(../images/back-tab-2x.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .hero .container {
+  .hero {
     width: 1600px;
     height: 600px;
     padding: 200px 0;
@@ -489,12 +503,12 @@ textarea::placeholder {
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .hero .container {
+  .hero {
     background-image: var(--bg-gradient), url(../images/back-2x.jpg);
   }
 }
 
-.hero .container .hero__titel {
+.hero .hero__titel {
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
@@ -508,14 +522,14 @@ textarea::placeholder {
 }
 
 @media screen and (min-width: 1200px) {
-  .hero .container .hero__titel {
+  .hero .hero__titel {
     font-size: 44px;
     line-height: 1.36;
     max-width: 696px;
   }
 }
 
-.hero .container .hero__btn {
+.hero .hero__btn {
   display: inline-block;
   font-family: inherit;
   font-weight: 700;
@@ -531,18 +545,30 @@ textarea::placeholder {
   border-radius: 4px;
 }
 
-.hero .container .hero__btn:hover, .hero .container .hero__btn:focus {
+.hero .hero__btn:hover, .hero .hero__btn:focus {
   text-decoration: underline var(--accent-color);
 }
 
 .specialty__list {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .specialty__list .specialty__item {
-  width: 270px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .specialty__list .specialty__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .specialty__list .specialty__item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .specialty__list .specialty__icon {
@@ -556,13 +582,14 @@ textarea::placeholder {
 }
 
 .specialty__list .specialty__titel {
-  width: 270px;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
 
-.specialty__list .specialty__text {
-  width: 270px;
+@media screen and (max-width: 767px) {
+  .specialty__list .specialty__titel {
+    text-align: center;
+  }
 }
 
 .what-do {
@@ -618,21 +645,41 @@ textarea::placeholder {
 }
 
 .team-main-titel {
-  min-width: 264px;
+  min-width: 205px;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .team-main-titel {
+    margin-bottom: 50px;
+  }
 }
 
 .team-list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .team-list .team-item {
+  width: 100%;
   display: block;
   background-color: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-list .team-item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list .team-item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .team-div {
