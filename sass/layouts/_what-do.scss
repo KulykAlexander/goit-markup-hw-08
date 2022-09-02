@@ -1,5 +1,10 @@
 .what-do {
     padding-top: 0;
+    display: none;;
+    @include desktop {
+        display: block;
+    }
+    
 }
 .what-do-main-titel {
     min-width: 366px;
