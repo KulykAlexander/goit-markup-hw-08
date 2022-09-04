@@ -982,10 +982,23 @@ textarea::placeholder {
 
 .buttons {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 8px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .buttons {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .buttons {
+    margin-bottom: 50px;
+  }
 }
 
 .buttons .example-btn {
@@ -1020,6 +1033,22 @@ textarea::placeholder {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+}
+
+.example-item {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .example-item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .example-item {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .example-link {

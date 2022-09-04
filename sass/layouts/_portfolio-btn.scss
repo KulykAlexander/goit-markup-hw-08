@@ -1,9 +1,18 @@
 .buttons {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
     gap: 8px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    
+        @include tablet {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    @include desktop {
+        margin-bottom: 50px;
+    }
+    
 .example-btn {
     font-family: inherit;
     font-weight: 500;
