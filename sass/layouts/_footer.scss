@@ -1,18 +1,40 @@
 .footer {
     
     margin: 0 auto;
-    padding: 60px 0px;
+    padding: 60px 60px;
+    height: 603px;
+    @include tablet {
+        height: 463px;
+    }
+    @include desktop {
+        height: 252px;
+    }
     
     background-color: var(--footer-background-color);
 }
 .footer .container {
     display: flex;
+    flex-direction: column;
     
-    justify-content: space-between;
-    align-items: baseline;
-    gap: 70px;}
+    align-items: center;
+    gap: 60px;
+    @include tablet {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    @include desktop {
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 70px;
+    }
+}
 .footer-add {
     margin: 0;
+    text-align: center;
+    @include desktop {
+        text-align: start;
+    }
 .footer-logo {
     display: block;
     font-family: 'Raleway', sans-serif;
@@ -76,10 +98,14 @@
 }
 
 .footer-titel {
+    text-align: center;
     text-transform: uppercase;
     margin-bottom: 20px;
 
     color: var(--footer-main-text);
+    @include desktop {
+        text-align: start;
+    }
 }
 
 .footer-soc {
@@ -118,10 +144,19 @@
 }
 .footer-form {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
+    @include desktop {
+        flex-direction: row;
+        gap: 12px;
+    }
 .footer-input {
-    width: 358px;
+    width: 450px;
+    @include desktop {
+        width: 358px;
+    }
     height: 50px;
     padding: 15px 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);
