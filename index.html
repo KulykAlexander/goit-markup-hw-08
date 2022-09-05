@@ -20,47 +20,49 @@
   <body>
     <header class="header">
       <div class="container">
+        
         <a href="index.html" lang="en" class="header__logo link"><span>Web</span>Studio</a>
         <div class="tab-menu">
-        <nav class="header-nav">
-          <ul class="main-nav list">
-            <li class="main-nav__item">
-              <a href="index.html" class="main-nav__link link current">Студія</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="portfolio.html" class="main-nav__link link">Портфоліо</a>
-            </li>
-            <li class="main-nav__item"><a href="#" class="main-nav__link link">Контакти</a></li>
-          </ul>
-        </nav>
+          <nav class="header-nav">
+            <ul class="main-nav list">
+              <li class="main-nav__item">
+                <a href="index.html" class="main-nav__link link current">Студія</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="portfolio.html" class="main-nav__link link">Портфоліо</a>
+              </li>
+              <li class="main-nav__item"><a href="#" class="main-nav__link link">Контакти</a></li>
+            </ul>
+          </nav>
 
-        <ul class="conneсtion-nav list">
-        <li class="conneсtion-nav__item">
-          <a href="mailto:info@webstudio.com" class="conneсtion-nav__link link"
+          <ul class="conneсtion-nav list">
+          <li class="conneсtion-nav__item">
+            <a href="mailto:info@webstudio.com" class="conneсtion-nav__link link"
+              >
+              <svg class="connection-nav__icon"  width="16" height="12">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+              info@webstudio.com</a
             >
-            <svg class="connection-nav__icon"  width="16" height="12">
-              <use href="./images/icons.svg#icon-mail"></use>
-            </svg>
-            info@webstudio.com</a
-          >
-        </li>
-        <li class="conneсtion-nav__item">
-          <a href="tel:+380961111111" class="conneсtion-nav__link link"
+          </li>
+          <li class="conneсtion-nav__item">
+            <a href="tel:+380961111111" class="conneсtion-nav__link link"
+              >
+              <svg class="connection-nav__icon"  width="10" height="16">
+                <use href="./images/icons.svg#icon-tel"></use>
+              </svg>
+              +38 096 111 11 11</a
             >
-            <svg class="connection-nav__icon"  width="10" height="16">
-              <use href="./images/icons.svg#icon-tel"></use>
-            </svg>
-            +38 096 111 11 11</a
-          >
-        </li>
-      </ul>
-      </div>
+          </li>
+          </ul>
+        </div>
+        
       <button type="button" class="menu-btn btn" data-menu-open>
               <svg class="mob-menu-icon"  width="40" height="40">
               <use href="./images/icons.svg#icon-menu"></use>
             </svg>
             </button>
-        <div class="mob-menu " data-menu>
+        <div class="mob-menu is-hidden" data-menu>
           <div class="container">
           <div class="mob-menu-top">
               <button type="button" class="menu-btn menu-btn-close btn" data-menu-close>
@@ -86,20 +88,19 @@
           <div class="mob-connect">
             <ul class="mob-connect-nav list">
               <li class="mob-connect-item">
-                <a href="mailto:info@webstudio.com" class="mob-connect-link link"
-                  >  
-                  info@webstudio.com</a
-                >
-              </li>
-              <li class="mob-connect-item">
-                <a href="tel:+380961111111" class="mob-connect-link link"
+                <a href="tel:+380961111111" class="connect-tel-link link"
                   >
                   +38 096 111 11 11</a
                 >
               </li>
+              <li class="mob-connect-item">
+                <a href="mailto:info@webstudio.com" class="connect-mail-link link"
+                  >  
+                  info@webstudio.com</a
+                >
+              </li>
             </ul>
-          </div>
-          <ul class="mob-soc-list list">
+            <ul class="mob-soc-list list">
             <li class="mob-soc-item">
               <a
                 href=""
@@ -141,6 +142,8 @@
               >
             </li>
           </ul>
+          </div>
+          
         </div>
       </div>
       </div>

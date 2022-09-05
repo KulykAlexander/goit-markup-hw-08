@@ -352,6 +352,12 @@ textarea::placeholder {
   background-color: #FFFFFF;
 }
 
+@media screen and (min-width: 1200px) {
+  .header .container {
+    align-items: center;
+  }
+}
+
 .header__logo {
   font-family: 'Raleway', sans-serif;
   font-size: 24px;
@@ -359,7 +365,7 @@ textarea::placeholder {
   min-width: 134px;
   letter-spacing: 0.03em;
   padding: 24px 0;
-  margin-right: 93px;
+  margin-right: 88px;
   color: #000000;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -369,6 +375,7 @@ textarea::placeholder {
     font-size: 26px;
     line-height: 1.19;
     min-width: 145px;
+    margin-right: 93px;
   }
 }
 
@@ -381,9 +388,16 @@ textarea::placeholder {
   text-decoration: underline;
 }
 
+.tab-menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 90px;
+}
+
 @media screen and (max-width: 767px) {
   .tab-menu {
     display: none;
+    gap: 315px;
   }
 }
 
@@ -434,8 +448,16 @@ textarea::placeholder {
 
 .conneсtion-nav {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-start;
   margin-left: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .conneсtion-nav {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
 }
 
 .conneсtion-nav .conneсtion-nav__link {
@@ -480,6 +502,12 @@ textarea::placeholder {
   fill: currentColor;
 }
 
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
+}
+
 .menu-btn-close {
   position: absolute;
   top: 10px;
@@ -520,6 +548,53 @@ textarea::placeholder {
 }
 
 .mob-menu-link.current {
+  color: var(--accent-color);
+}
+
+.mob-connect-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.connect-mail-link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--second-color);
+}
+
+.connect-tel-link {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.mob-soc-list {
+  display: flex;
+  flex-direction: row;
+  margin-top: 64px;
+}
+
+.mob-soc-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.mob-soc-item:not(:last-child)::after {
+  content: ' ';
+  width: 22px;
+  height: 0px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+  margin-left: 10px;
+}
+
+.mob-soc-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
   color: var(--accent-color);
 }
 
