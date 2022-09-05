@@ -228,6 +228,7 @@
           <li>
             <div class="wat-do-activ">
             <img
+              srcset="./images/img1.jpg 1x, ./images/img1-2x.jpg 2x"
               src="./images/img1.jpg"
               alt="Пишемо код веб-сторінки"
               width="370"
@@ -239,6 +240,7 @@
           <li>
             <div class="wat-do-activ">
             <img
+              srcset="./images/img2.jpg 1x, ./images/img2-2x.jpg 2x"
               src="./images/img2.jpg"
               alt="Сінхронизуємо сторінку на різних пристроях"
               width="370"
@@ -250,6 +252,7 @@
           <li>
             <div class="wat-do-activ">
             <img
+              srcset="./images/img3.jpg 1x, ./images/img3-2x.jpg 2x"
               src="./images/img3.jpg"
               alt="віалізуємо веб-магію"
               width="370"
@@ -270,12 +273,23 @@
 
         <ul class="team-list list">
           <li class="team-item">
+            <picture>
+              <source srcset="./images/photos/igor.jpg 1x, 
+              ./images/photos/igor-2x.jpg 2x" 
+              media="(min-width:1200px)"/>
+              <source srcset="./images/photos/igor-tab.jpg 1x, 
+              ./images/photos/igor-tab-2x.jpg 2x" 
+              media="(min-width:768px)"/>
+              <source srcset="./images/photos/igor-mob.jpg 1x, 
+              ./images/photos/igor-mob-2x.jpg 2x" 
+              media="(max-width:767px)"/>
             <img
               src="./images/photos/igor.jpg"
               alt="фотографія члена команди"
               width="270"
               height="260"
             />
+            </picture>
             <div class="team-div">
               <h3 class="team-titel titel">Ігор Дем'яненко</h3>
               <p lang="en" class="team-text text">Product Designer</p>
@@ -305,12 +319,23 @@
             
           </li>
           <li class="team-item">
-            <img
+            <picture>
+            <source srcset="./images/photos/olga.jpg 1x, 
+              ./images/photos/olga-2x.jpg 2x" 
+              media="(min-width:1200px)"/>
+              <source srcset="./images/photos/olga-tab.jpg 1x, 
+              ./images/photos/olga-tab-2x.jpg 2x" 
+              media="(min-width:768px)"/>
+              <source srcset="./images/photos/olga-mob.jpg 1x, 
+              ./images/photos/olga-mob-2x.jpg 2x" 
+              media="(max-width:767px)"/>
+              <img
               src="./images/photos/olga.jpg"
               alt="фотографія члена команди"
               width="270"
               height="260"
             />
+            </picture>
             <div class="team-div">
               <h3 class="team-titel titel">Ольга Репіна</h3>
               <p lang="en" class="team-text text">Frontend Developer</p>
@@ -340,12 +365,23 @@
           
           </li>
           <li class="team-item">
+            <picture>
+              <source srcset="./images/photos/nik.jpg 1x, 
+              ./images/photos/nik-2x.jpg 2x" 
+              media="(min-width:1200px)"/>
+              <source srcset="./images/photos/nik-tab.jpg 1x, 
+              ./images/photos/nik-tab-2x.jpg 2x" 
+              media="(min-width:768px)"/>
+              <source srcset="./images/photos/nik-mob.jpg 1x, 
+              ./images/photos/nik-mob-2x.jpg 2x" 
+              media="(max-width:767px)"/>
             <img
               src="./images/photos/nik.jpg"
               alt="фотографія члена команди"
               width="270"
               height="260"
             />
+            </picture>
             <div class="team-div">
               <h3 class="team-titel titel">Микола Тарасов</h3>
               <p lang="en" class="team-text text">Marketing</p>
@@ -375,12 +411,23 @@
             
           </li>
           <li class="team-item">
+            <picture>
+              <source srcset="./images/photos/mishka.jpg 1x, 
+              ./images/photos/mishka-2x.jpg 2x" 
+              media="(min-width:1200px)"/>
+              <source srcset="./images/photos/mishka-tab.jpg 1x, 
+              ./images/photos/mishka-tab-2x.jpg 2x" 
+              media="(min-width:768px)"/>
+              <source srcset="./images/photos/mishka-mob.jpg 1x, 
+              ./images/photos/mishka-mob-2x.jpg 2x" 
+              media="(max-width:767px)"/>
             <img
               src="./images/photos/mishka.jpg"
               alt="фотографія члена команди"
               width="270"
               height="260"
             />
+            </picture>
             <div class="team-div">
               <h3 class="team-titel titel">Михайло Ермаков</h3>
               <p lang="en" class="team-text text">UI Designer</p>
