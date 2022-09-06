@@ -428,7 +428,7 @@ textarea::placeholder {
 .tab-menu {
   display: flex;
   justify-content: space-between;
-  gap: 90px;
+  width: 100%;
 }
 
 @media screen and (max-width: 767px) {
@@ -520,7 +520,13 @@ textarea::placeholder {
 }
 
 .conneсtion-nav .conneсtion-nav__item:not(:last-child) {
-  margin-right: 50px;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .conneсtion-nav .conneсtion-nav__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .menu-btn {
@@ -657,7 +663,7 @@ textarea::placeholder {
 
 @media screen and (min-width: 480px) {
   .hero {
-    width: 480px;
+    max-width: 480px;
     height: 400px;
     padding: 118px 0px;
   }
@@ -665,7 +671,7 @@ textarea::placeholder {
 
 @media screen and (min-width: 768px) {
   .hero {
-    width: 768px;
+    max-width: 768px;
     height: 400px;
     padding: 118px 0;
     background-image: var(--bg-gradient), url(../images/back-tab.jpg);
@@ -680,7 +686,7 @@ textarea::placeholder {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 1600px;
+    max-width: 1600px;
     height: 600px;
     padding: 200px 0;
     background-image: var(--bg-gradient), url(../images/back.jpg);
@@ -970,7 +976,7 @@ textarea::placeholder {
 
 .footer {
   margin: 0 auto;
-  padding: 60px 60px;
+  padding: 60px 0;
   height: 603px;
   background-color: var(--footer-background-color);
 }
@@ -1331,9 +1337,27 @@ textarea::placeholder {
 
 .example-link .example-activ {
   position: relative;
-  width: 370px;
+  width: 100%;
   height: 294px;
   overflow: hidden;
+}
+
+@media screen and (min-width: 480px) {
+  .example-link .example-activ {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .example-link .example-activ {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .example-link .example-activ {
+    width: 370px;
+  }
 }
 
 .example-link .example-activ .activ-text {
